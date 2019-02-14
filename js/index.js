@@ -1,7 +1,7 @@
 
-$(document).ready(function(){
+jQuery(document).ready(function(){
 
-
+var $= jQuery;
 
 $(window).load(function(){
   setTimeout(function () {
