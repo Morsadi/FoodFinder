@@ -1,0 +1,214 @@
+body{
+  background: #eeeeee;
+  font-family: helvetica;
+}
+
+.header{
+  background: none;
+  width: 100%;
+  height: 45px;
+  text-align: center;
+}
+
+#textarea input{
+ width:176.21;
+height:40px;
+background: white;
+border: 1px solid #432108;
+border-radius: 0.5em;
+outline: none;
+color: #432109;
+text-align: center;
+}
+
+#FIND{
+  background:white;
+display: none;
+width: 700px;
+  min-width:420px;
+  height: 320px;
+position: fixed;
+top: 10px;
+left: 0;
+right: 0;
+margin-left: auto;
+margin-right: auto;
+  border-radius:1em;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.wrapper div{
+  box-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  transition-delay: 1s;
+  cursor: pointer;
+  background-repeat: no-repeat!important;
+  background-position: center center!important;
+  background-size: cover!important;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.filter{
+  width: 100%;
+  background: black;
+  height: 300px;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.wrapper div h3{
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+.bodyFilter{
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.4);
+
+}
+.recipeSpace{
+  overflow: scroll;
+  width: 60%;
+  height: 500px;
+  background: #fff;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  position: relative;
+  word-wrap: break-word;
+}
+.recipeSpace ul{
+list-style-position: inside;
+
+}
+.recipeSpace ul li{
+  font-size: 18px;
+}
+.title{
+  text-align: center;
+    margin: 100px;
+}
+.oven{
+  margin: 0px auto;
+  width: 80px;
+}
+.recipeSpace a{
+  margin: 20px auto;
+  width: 80px;
+  height: 42px;
+}
+.close1{
+  position: relative;
+    right: 20px;
+    top: 20px;
+    float: right;
+  width: 30px;
+  cursor: pointer;
+}
+.close1:hover{
+  opacity: .7;
+}
+.close2{
+  width: 30px;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+  position: absolute;
+}
+.close2:hover{
+  opacity: .6;
+}
+#notice{
+  display: none;
+  font-size: 18px;
+  color: red;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.oven:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@media screen and (max-width: 600px) {
+  
+  #FIND{
+    width:90%;
+  }
+  .recipeSpace{
+        width:100%;
+
+  }
+  
+}
+
+
+
+
+
+.searcharea{
+ text-align:center;
+ width: 287px;
+height: 67px;
+border: 1px solid #C4C4C4;
+box-sizing: border-box;
+border-radius: 10px;
+margin-left:60px;
+}
+
+.searchBtn{
+  width:40px;
+  margin-left:10px;
+  cursor:pointer;
+}
+.searchy h3{
+  margin-top: 40px;
+  font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 48px;
+color: #3B3B3B;
+  
+}
+.searchDes{
+  font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 20px;
+text-align: center;
+}
+.searchy{
+  text-align:center;
+}
