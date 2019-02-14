@@ -53,7 +53,7 @@ $('#notice').text('x');
   //getting the true filter values
 
   $.ajax({
-    url: 'https://api.edamam.com/search?q='+ text + '&app_id=c9925564&app_key=2516ed0fa29e7bf9ba5e4671e0382116&count=20&to=40',
+    url: 'https://cors-anywhere.herokuapp.com/https://api.edamam.com/search?q='+ text + '&app_id=c9925564&app_key=2516ed0fa29e7bf9ba5e4671e0382116&count=20&to=40',
     type: 'GET',
     success: function(data){
         var recipes = data.hits;
