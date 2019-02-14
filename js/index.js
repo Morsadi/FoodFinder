@@ -1,5 +1,8 @@
+
+var $= jQuery;
+
 $(document).ready(function(){
- 
+
 
 
 $(window).load(function(){
@@ -24,7 +27,7 @@ $('#searchBell').click(function () {
   $('#notice').css('display', 'none')
 
 })
-  
+
 //close search area
 $('.close1').click(function() {
   $('#FIND').css('display', 'none')
@@ -68,7 +71,7 @@ $('#notice').css('display', 'block')
 $('#FIND').css('display', 'none');
 $('.bodyFilter').css('display','none');
 
-    //itterate through recipes and get the wanted entities  
+    //itterate through recipes and get the wanted entities
   recipes.forEach(function(val, index){
     var allImage = val.recipe.image;
   var allTitle = val.recipe.label;
@@ -102,10 +105,10 @@ $('.bodyFilter').css('display','none');
       $('.bodyFilter').append('<div class="recipeSpace"><h3 class="title"> '+title+' </h3><ul><h3>Ingredients</h3></ul></div>');//create title & bulletin section
       $('.recipeSpace').append('<img class="close2" src="https://i.ibb.co/TPrkS7K/close1.png"/>')
 
-      
+
       //append each ingredient in a bulletin
       ingredients.forEach(function(ing){ $('.recipeSpace ul').append('<li>'+ing+'</li>')})
-      
+
       //open the full recipe link
       $('.recipeSpace').append('<a href="'+link+'" target="blank_"><img class="oven" src="https://i.ibb.co/wQhhDSx/Oven.png" /></a>')
 
@@ -134,9 +137,9 @@ $('.searcharea').keydown(function(e) {
   $('.searchBtn').click();
 }
 })
-  
-  
-  
-  
-  
+
+
+
+
+
 }) //end of jQuery
