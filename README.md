@@ -1,2 +1,3 @@
-# FoodFinder.github.io
-A food recipe finder
+# FoodFinder 
+
+This app was created using Edamam's Recipe API
