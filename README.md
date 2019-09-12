@@ -1,3 +1,3 @@
 # FoodFinder 
 
-This app was created using Edamam's Recipe API
+This app was written in Javascrip & jQuery, HTML and CSS  using Edamam's Recipe API 
